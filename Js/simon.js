@@ -27,7 +27,7 @@ function UpdateStopContent() {
     ApagarBotones();
     terminoSecuencia = true;
     terminoRespuestas = false; 
-    document.querySelector("#" + "botonPlay" + " img").setAttribute("src", "botonPlayDesactivado.png"); 
+    document.querySelector("#" + "botonPlay" + " img").setAttribute("src", "Sprites/botonPlayDesactivado.png"); 
     //Cuando acaba la secuencia arranca el tiempo
     updateTiempo = setInterval( ActualizarTiempo, 1000);
     
@@ -54,7 +54,7 @@ function IniciarJuego() {
     posSecuenciaActual = 0;
     secuenciaRespuestas = [];
     terminoSecuencia = false;
-    document.querySelector("#" + "botonPlay" + " img").setAttribute("src", "botonPlay.png"); 
+    document.querySelector("#" + "botonPlay" + " img").setAttribute("src", "Sprites/botonPlay.png"); 
     IniciarUpdate(duracionIntervaloEncendido);
 }
 

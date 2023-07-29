@@ -1,6 +1,6 @@
 function Boton(elementoId, spriteBotonPresionado, condicionBoton = function(){return true}) {
     if(condicionBoton())
-    document.querySelector("#" + elementoId + " img").setAttribute("src", spriteBotonPresionado);
+    document.querySelector("#" + elementoId + " img").setAttribute("src", "Sprites/"+spriteBotonPresionado);
 }
 
 //BOTON PLAY
@@ -26,7 +26,7 @@ function BotonReset(){
 
 //BOTON CONTACTO
 function BotonContacto(){
-    window.open("../ContactarnosWeb/contactarnos.html", "_blank");
+    window.open("ContactarnosWeb/contactarnos.html", "_blank");
 }
 
 //BOTON ACEPTAR

@@ -3,9 +3,9 @@ class BotonJugable {
         this.elementoId = elementoId;
         this.buttonComponente = document.querySelector("#" + elementoId);
         this.imgComponente = document.querySelector("#" + elementoId + " img");
-        this.spriteBotonPresionado = spriteBotonPresionado;
-        this.spriteBotonApagado = spriteBotonApagado;
-        this.spriteBotoEncendido = spriteBotoEncendido;
+        this.spriteBotonPresionado = "Sprites/"+spriteBotonPresionado;
+        this.spriteBotonApagado = "Sprites/"+spriteBotonApagado;
+        this.spriteBotoEncendido = "Sprites/"+spriteBotoEncendido;
         this.botonSeleccionado = false;
         this.AsignarEventos();
     }
