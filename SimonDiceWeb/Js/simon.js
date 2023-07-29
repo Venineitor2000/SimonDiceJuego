@@ -24,7 +24,6 @@ function UpdateContent() {
 }
 //Aca pones todo lo que queres que se ejecute al terminar el update
 function UpdateStopContent() {
-    
     ApagarBotones();
     terminoSecuencia = true;
     terminoRespuestas = false; 
@@ -36,9 +35,7 @@ function UpdateStopContent() {
 
 //Esta es para controlar si queremos detener el update, solo hace falta llamar a la funcon y listo
 function Detenerupdate() {
-
     clearInterval(updateActual);
-    //updateActual = null;
     UpdateStopContent();
     
     

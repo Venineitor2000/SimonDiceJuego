@@ -58,12 +58,12 @@ function ValidarMensaje(){
 }
 
 //MODIFICAR EVENTOS DE BOTON RESTABELCER Y ENVIAR      
-  document.getElementById('formularioContacto').addEventListener('submit', function(event) {
+    document.getElementById('formularioContacto').addEventListener('submit', function(event) {
     if(!(ValidarMensaje() & ValidarMail() & ValidarNombre()))
     event.preventDefault();
   });
 
-  document.getElementById('formularioContacto').addEventListener('reset', function(event) {
+    document.getElementById('formularioContacto').addEventListener('reset', function(event) {
     mensajeInput.classList.remove('entradaValida');
     mensajeInput.classList.remove('entradaInvalida');
     mailInput.classList.remove('entradaValida');

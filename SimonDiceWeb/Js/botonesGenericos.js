@@ -1,5 +1,4 @@
 function Boton(elementoId, spriteBotonPresionado, condicionBoton = function(){return true}) {
-    
     if(condicionBoton())
     document.querySelector("#" + elementoId + " img").setAttribute("src", spriteBotonPresionado);
 }

@@ -1,16 +1,12 @@
 class BotonJugable {
-
     constructor(elementoId, spriteBotonPresionado, spriteBotonApagado, spriteBotoEncendido) {
         this.elementoId = elementoId;
         this.buttonComponente = document.querySelector("#" + elementoId);
-       
         this.imgComponente = document.querySelector("#" + elementoId + " img");
-        
         this.spriteBotonPresionado = spriteBotonPresionado;
         this.spriteBotonApagado = spriteBotonApagado;
         this.spriteBotoEncendido = spriteBotoEncendido;
         this.botonSeleccionado = false;
-
         this.AsignarEventos();
     }
 
@@ -21,7 +17,6 @@ class BotonJugable {
         this.buttonComponente.addEventListener("mousedown", this.PresionarBoton.bind(this));
         this.buttonComponente.addEventListener("mouseup", this.SoltarBoton.bind(this));
         this.buttonComponente.addEventListener("mouseleave", this.Deseleccionarboton.bind(this));
-
     }
 
     PresionarBoton() {
@@ -29,17 +24,13 @@ class BotonJugable {
             this.imgComponente.setAttribute("src", this.spriteBotonPresionado);
             this.botonSeleccionado = true;
         }
-        
-        
     }
 
     Deseleccionarboton() {
-        
         if (terminoSecuencia  && !terminoRespuestas && !terminoJuego) {
             this.botonSeleccionado = false;
             this.ApagarBoton();
         }
-            
     }
 
     SoltarBoton(){
@@ -59,7 +50,6 @@ class BotonJugable {
     }
 
     ApagarBoton(){
-        
         this.imgComponente.setAttribute("src", this.spriteBotonApagado);
     }
 
