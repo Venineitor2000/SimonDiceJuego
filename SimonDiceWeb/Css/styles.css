@@ -1,3 +1,5 @@
+
+
 body{
     display: flex;
     flex-direction: column;
@@ -11,9 +13,7 @@ header {
         justify-content:space-around;
         flex-shrink: 0;
         flex-basis: 100px;
-        align-items: center;
-
-        
+        align-items: center;    
 }
 
 footer {
@@ -26,10 +26,8 @@ footer {
 
 
 #botonPlay {
-    
     width: 100px;
     height:100px;
-    
     border: none;
     cursor: pointer;
     top: 50%;
@@ -38,43 +36,48 @@ footer {
     margin-bottom: -50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
-    
 }
 
-#Contador, #Puntos
-{
-    font-size: 50px;
-    
-  border-width: 10px;
-  border-radius: 15px;
-  border-style: solid;
-  background-color: rgb(255, 255, 255); /* Fondo del elemento */
-  border-color: #00b7ff;
-}
-
-#Nivel
-{
+#contador, #puntos{
     font-size: 50px;
     border-width: 10px;
-  border-radius: 15px;
-  border-style: solid;
-  background-color: rgb(255, 255, 255); /* Fondo del elemento */
-  border-color: #0400ff;
+    border-radius: 15px;
+    border-style: solid;
+    background-color: rgb(255, 255, 255); /* Fondo del elemento */
+    border-color: #00b7ff;
+}
+
+#nivel{
+    font-size: 50px;
+    border-width: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    background-color: rgb(255, 255, 255); /* Fondo del elemento */
+    border-color: #0400ff;
   
 }
 
-.valorPuntosContador
-{
+.valorPuntosContador{
     display: flex;
     justify-content: center;
 }
-#botonReset {
+#botonReset{
 
     width: 144px;
     height:65px;
     border: none;
     cursor: pointer;
-    
+    margin-right: 15px;
+     
+}
+
+#botonContacto{
+
+    width: 144px;
+    height:65px;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;    
 }
 
 button img{
@@ -100,7 +103,7 @@ button img{
 #botonesJuego button{
     
     background-color: transparent;
-  border: none;
+    border: none;
     width:200px;
     height:200px;
 }
@@ -111,8 +114,7 @@ button {
 }
 
 
-#PuntuacionFInalContainer
-{
+#puntuacionFinalContenedor{
     height: 100%;
     width: 100%;
     flex-direction: column;
@@ -121,8 +123,7 @@ button {
     align-items: center;
 }
 
-#Perdiste
-{
+#perdiste{
     background-color: red;
     margin: 15px;
     font-size: 50px;
@@ -131,20 +132,46 @@ button {
     color: white;
 }
 
-#PuntuacionFInal
-{
+#puntuacionFInal{
     font-size: 30px;
     font-weight: bold;
     text-decoration: underline;
     margin-right: 5px;
 }
 
-#ValorPuntuacionFInal
-{
+#valorPuntuacionFInal{
     font-size: 30px;
     font-weight: bold;
 }
     
+div#ingresarNombreContenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    height: 150px;
+    width: 500px;
+    transform: translateX(-50%) translateY(-25%);
+    border-radius: 15px;
+    background-color: red;
 
+}
 
-    
+div#ingresarNombreContenedor button img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 108px;
+    height:48px;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;  
+}
+
+div#ingresarNombreContenedor label, div#ingresarNombreContenedor p{
+    font-size: 15px;
+    font-weight: bold;
+}

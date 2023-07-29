@@ -42,7 +42,7 @@ class BotonJugable {
             
     }
 
-    SoltarBoton() {
+    SoltarBoton(){
         if (terminoSecuencia && !terminoRespuestas && !terminoJuego) {
             this.ApagarBoton();
         }
@@ -53,12 +53,12 @@ class BotonJugable {
         }
     }
 
-    EncenderBoton() {
+    EncenderBoton(){
         //console.log("Se prendio el boton ", this.elementoId);
         this.imgComponente.setAttribute("src", this.spriteBotoEncendido);
     }
 
-    ApagarBoton() {
+    ApagarBoton(){
         
         this.imgComponente.setAttribute("src", this.spriteBotonApagado);
     }
