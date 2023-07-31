@@ -1,92 +1,91 @@
-<html>
-<head>
-    <title></title>
-    <link href="Css/reset.css" rel="stylesheet" />
-    <link href="Css/styles.css" rel="stylesheet" />
-</head>
-<body>
-    <header>
-        
-        <div id = "puntos">
-            <div>ACIERTOS:</div>
-            <div class="valorPuntosContador">0</div>
-        </div>
-        
-        <div id = "nivel">
-            <span>NIVEL:</span>
-            <span class="valornivel">1</span>
-        </div>
 
-        <div id = "contador">
-            <div>TIEMPO:</div>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>SIMON DICE</title>
+        <link href="Css/reset.css" rel="stylesheet">
+        <link href="Css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
             
-            <div class="valorPuntosContador">0</div>
-        </div>
-        
-    </header>
-    
-    <main>
-        <div id = "ingresarNombreContenedor">
-            <label for="ingresarNombre">INGRESAR NOMBRE:</label>
-            <input type="text" id="ingresarNombre">
-            <p>(EL NOMBRE DEBE TENER MININIMO 3 CARACTERES)</p>
-            <button id="botonAceptar" onclick = "BotonAceptar()" onmousedown = "Boton('botonAceptar', 'botonAceptarApretado.png')" onmouseup="Boton('BotonAceptar', 'botonAceptar.png')" onmouseleave="Boton('BotonAceptar', 'botonAceptar.png')"
-            >
-                <img src="Sprites/botonAceptar.png" />
-            </button>
-        </div>
-
-        <button id="botonPlay" onclick = "BotonPlay()" onmousedown = "Boton('botonPlay', 'botonPlayApretado.png', ValidarBotonPlayInteractauble)" onmouseup="Boton('botonPlay', 'botonPlay.png', ValidarBotonPlayInteractauble)" onmouseleave="Boton('botonPlay', 'botonPlay.png', ValidarBotonPlayInteractauble)"
-            >
-                <img src="Sprites/botonPlay.png" />
-            </button>
-            
-       
-        
-        
-        <div id="botonesJuego">
-            
-            <div class="ladoDeBotonens">
-                <button id = "botonJuego1" >
-                    <img src="Sprites/imagenApagada1.png" />
-                </button>
-                <button id = "botonJuego2">
-                    <img src="Sprites/imagenApagada2.png" />
-                </button>
-            </div>
-            <div class="ladoDeBotonens">
-                <button id = "botonJuego4" >
-                    <img  src="Sprites/imagenApagada4.png" />
-                </button>
-                <button id = "botonJuego3" >
-                    <img  src="Sprites/imagenApagada3.png" />
-                </button>
-
+            <div id = "puntos">
+                <div>ACIERTOS:</div>
+                <div class="valorPuntosContador">0</div>
             </div>
             
-        </div>
-     
+            <div id = "nivel">
+                <span>NIVEL:</span>
+                <span class="valornivel">1</span>
+            </div>
+
+            <div id = "contador">
+                <div>TIEMPO:</div>
+                
+                <div class="valorPuntosContador">0</div>
+            </div>
             
-    
+        </header>
         
+        <main>
+            <div id = "ingresarNombreContenedor">
+                <label for="ingresarNombre">INGRESAR NOMBRE:</label>
+                <input type="text" id="ingresarNombre">
+                <p>(EL NOMBRE DEBE TENER MININIMO 3 CARACTERES)</p>
+                <button id="botonAceptar" onclick = "BotonAceptar()" onmousedown = "Boton('botonAceptar', 'botonAceptarApretado.png')" onmouseup="Boton('BotonAceptar', 'botonAceptar.png')" onmouseleave="Boton('BotonAceptar', 'botonAceptar.png')"
+                >
+                    <img src="Sprites/botonAceptar.png" alt="Boton aceptar">
+                </button>
+            </div>
+
+            <button id="botonPlay" onclick = "BotonPlay()" onmousedown = "Boton('botonPlay', 'botonPlayApretado.png', ValidarBotonPlayInteractauble)" onmouseup="Boton('botonPlay', 'botonPlay.png', ValidarBotonPlayInteractauble)" onmouseleave="Boton('botonPlay', 'botonPlay.png', ValidarBotonPlayInteractauble)"
+                >
+                    <img src="Sprites/botonPlay.png" alt="Boton play">
+                </button>
+                
         
-    </main>
-    <footer>
-        <button id="botonReset" onclick = "BotonReset()" onmousedown = "Boton('botonReset', 'botonResetApretado.png')" onmouseup="Boton('botonReset', 'botonReset.png')" onmouseleave="Boton('botonReset', 'botonReset.png')"
-            >
-                <img src="Sprites/botonReset.png" />
-            </button>
+            
+            
+            <div id="botonesJuego">
+                
+                <div class="ladoDeBotonens">
+                    <button id = "botonJuego1" >
+                        <img src="Sprites/imagenApagada1.png" alt="Boton amarillo">
+                    </button>
+                    <button id = "botonJuego2">
+                        <img src="Sprites/imagenApagada2.png" alt="Boton rojo">
+                    </button>
+                </div>
+                <div class="ladoDeBotonens">
+                    <button id = "botonJuego4" >
+                        <img  src="Sprites/imagenApagada4.png" alt="Boton azul">
+                    </button>
+                    <button id = "botonJuego3" >
+                        <img  src="Sprites/imagenApagada3.png" alt="Boton verde">
+                    </button>
 
-            <button id="botonContacto" onclick = "BotonContacto()" onmousedown = "Boton('botonContacto', 'botonContactoApretado.png')" onmouseup="Boton('botonContacto', 'botonContacto.png')" onmouseleave="Boton('botonContacto', 'botonContacto.png')"
-            >
-                <img src="Sprites/botonContacto.png" />
+                </div>
+                
+            </div>
+        
+                
+        
+            
+            
+        </main>
+        <footer>
+            <button id="botonReset" onclick = "BotonReset()" onmousedown = "Boton('botonReset', 'botonResetApretado.png')" onmouseup="Boton('botonReset', 'botonReset.png')" onmouseleave="Boton('botonReset', 'botonReset.png')">
+                <img src="Sprites/botonReset.png" alt="Boton reset">
             </button>
-    </footer>
-    <script src="Js/variablesGlobales.js"></script>
-    <script src="Js/botonClass.js"></script>
-    <script src="Js/botonesGenericos.js"></script>
-    <script src="Js/simon.js"></script>
-    <script src="Js/main.js"></script>
+            <button id="botonContacto" onclick = "BotonContacto()" onmousedown = "Boton('botonContacto', 'botonContactoApretado.png')" onmouseup="Boton('botonContacto', 'botonContacto.png')" onmouseleave="Boton('botonContacto', 'botonContacto.png')">
+                <img src="Sprites/botonContacto.png" alt="Boton contacto">
+            </button>
+        </footer>
+        <script src="Js/variablesGlobales.js"></script>
+        <script src="Js/botonClass.js"></script>
+        <script src="Js/botonesGenericos.js"></script>
+        <script src="Js/simon.js"></script>
+        <script src="Js/main.js"></script>
 
-</body>
+    </body>
 </html>

@@ -14,13 +14,13 @@ function ApagarBotones() {
  //MANEJO DEL UPDATE
 //Aca pones todo lo que queres que se ejecute en el update
 function UpdateContent() {
-        secuencia[posSecuenciaActual].EncenderBoton();
-        posSecuenciaActual++;
-        setTimeout(ApagarBotones, duracionBotonEncendido);
+    secuencia[posSecuenciaActual].EncenderBoton();
+    posSecuenciaActual++;
+    setTimeout(ApagarBotones, duracionBotonEncendido);
          
-        if(posSecuenciaActual == secuencia.length){
-            setTimeout(Detenerupdate, duracionBotonEncendido);
-        }
+    if(posSecuenciaActual == secuencia.length){
+        setTimeout(Detenerupdate, duracionBotonEncendido);
+    }
 }
 //Aca pones todo lo que queres que se ejecute al terminar el update
 function UpdateStopContent() {
@@ -36,9 +36,7 @@ function UpdateStopContent() {
 //Esta es para controlar si queremos detener el update, solo hace falta llamar a la funcon y listo
 function Detenerupdate() {
     clearInterval(updateActual);
-    UpdateStopContent();
-    
-    
+    UpdateStopContent(); 
 }
 
 //La implementacion del update

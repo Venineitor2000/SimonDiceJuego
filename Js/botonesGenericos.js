@@ -1,10 +1,10 @@
-function Boton(elementoId, spriteBotonPresionado, condicionBoton = function(){return true}) {
+//BOTONES EN GENERAL
+function Boton(elementoId, spriteBotonPresionado, condicionBoton = function(){return true}){
     if(condicionBoton())
-    document.querySelector("#" + elementoId + " img").setAttribute("src", "Sprites/"+spriteBotonPresionado);
+        document.querySelector("#" + elementoId + " img").setAttribute("src", "Sprites/"+spriteBotonPresionado);
 }
 
 //BOTON PLAY
-
 function ValidarBotonPlayInteractauble(){
     //Secuencia no termino? Entonces no podes suar boton termino, sino si
     if(terminoSecuencia && terminoRespuestas && !terminoJuego)           
@@ -13,8 +13,7 @@ function ValidarBotonPlayInteractauble(){
 }
 
 function BotonPlay(){
-    if(ValidarBotonPlayInteractauble())
-    {
+    if(ValidarBotonPlayInteractauble()){
         IniciarJuego();
     }   
 }

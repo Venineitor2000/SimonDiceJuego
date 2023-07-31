@@ -14,5 +14,7 @@ var secuenciaRespuestas = [];
 var puntaje = 0;
 var tiempo = 0;
 var nivel = 1; 
-var multiplicadorPuntaje = 100; //Si queres cambiar por cuanto se va a multiplicar la puntuacion final
-var nombrePlayer = "Pepe"; //De momento no le doy ningun uso al nombre, solo lo almaceno
+//Si queres cambiar por cuanto se va a multiplicar la puntuacion final
+var multiplicadorPuntaje = 100; 
+//De momento no le doy ningun uso al nombre, solo lo almaceno
+var nombrePlayer = "Pepe"; 

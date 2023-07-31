@@ -1,7 +1,7 @@
 //VARIABLES
 var nombreInput = document.querySelector("input[id = 'nombre']");
 var mensajeInput = document.querySelector("input[id = 'mensaje']");
-var mailInput = document.querySelector("input[id = 'correo']");
+var correoInput = document.querySelector("input[id = 'correo']");
 
 //FUNCIONES
 function ValidarNombre(){
@@ -18,25 +18,25 @@ function ValidarNombre(){
     }
 }
 
-function ValidarMail(){
-    var mail = document.querySelector("input[id = 'correo']").value;
+function ValidarCorreo(){
+    var correo = document.querySelector("input[id = 'correo']").value;
     var posPunto = 0;
     var posArroba = 0;
-    for(var i = 0; i < mail.length ; i++){  
-        if(mail[i] === "@")
+    for(var i = 0; i < correo.length ; i++){  
+        if(correo[i] === "@")
         posArroba = i;
-        if(mail[i] === ".")
+        if(correo[i] === ".")
         posPunto = i;
     }
     
-    if( mail.length >= 5 && mail.includes("@") && mail.includes(".") && mail[0] != " " && mail[nombre.lenght -1] != " " && posPunto > posArroba){
-        mailInput.classList.remove('entradaInvalida');
-        mailInput.classList.add('entradaValida');
+    if( correo.length >= 5 && correo.includes("@") && correo.includes(".") && correo[0] != " " && correo[nombre.lenght -1] != " " && posPunto > posArroba){
+        correoInput.classList.remove('entradaInvalida');
+        correoInput.classList.add('entradaValida');
         return true;
     }
     else{   
-        mailInput.classList.remove('entradaValida');
-        mailInput.classList.add('entradaInvalida');
+        correoInput.classList.remove('entradaValida');
+        correoInput.classList.add('entradaInvalida');
         return false; 
     }
 }
@@ -59,15 +59,15 @@ function ValidarMensaje(){
 
 //MODIFICAR EVENTOS DE BOTON RESTABELCER Y ENVIAR      
     document.getElementById('formularioContacto').addEventListener('submit', function(event) {
-    if(!(ValidarMensaje() & ValidarMail() & ValidarNombre()))
+    if(!(ValidarMensaje() & ValidarCorreo() & ValidarNombre()))
     event.preventDefault();
   });
 
     document.getElementById('formularioContacto').addEventListener('reset', function(event) {
     mensajeInput.classList.remove('entradaValida');
     mensajeInput.classList.remove('entradaInvalida');
-    mailInput.classList.remove('entradaValida');
-    mailInput.classList.remove('entradaInvalida');
+    correoInput.classList.remove('entradaValida');
+    correoInput.classList.remove('entradaInvalida');
     nombreInput.classList.remove('entradaValida');
     nombreInput.classList.remove('entradaInvalida');
   });

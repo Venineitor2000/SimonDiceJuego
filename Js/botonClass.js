@@ -1,13 +1,13 @@
 class BotonJugable {
-    constructor(elementoId, spriteBotonPresionado, spriteBotonApagado, spriteBotoEncendido) {
-        this.elementoId = elementoId;
-        this.buttonComponente = document.querySelector("#" + elementoId);
-        this.imgComponente = document.querySelector("#" + elementoId + " img");
-        this.spriteBotonPresionado = "Sprites/"+spriteBotonPresionado;
-        this.spriteBotonApagado = "Sprites/"+spriteBotonApagado;
-        this.spriteBotoEncendido = "Sprites/"+spriteBotoEncendido;
-        this.botonSeleccionado = false;
-        this.AsignarEventos();
+        constructor(elementoId, spriteBotonPresionado, spriteBotonApagado, spriteBotoEncendido) {
+            this.elementoId = elementoId;
+            this.buttonComponente = document.querySelector("#" + elementoId);
+            this.imagenComponente = document.querySelector("#" + elementoId + " img");
+            this.spriteBotonPresionado = "Sprites/"+spriteBotonPresionado;
+            this.spriteBotonApagado = "Sprites/"+spriteBotonApagado;
+            this.spriteBotoEncendido = "Sprites/"+spriteBotoEncendido;
+            this.botonSeleccionado = false;
+            this.AsignarEventos();
     }
 
     AsignarEventos() {
@@ -21,7 +21,7 @@ class BotonJugable {
 
     PresionarBoton() {
         if (terminoSecuencia && !terminoRespuestas && !terminoJuego) {
-            this.imgComponente.setAttribute("src", this.spriteBotonPresionado);
+            this.imagenComponente.setAttribute("src", this.spriteBotonPresionado);
             this.botonSeleccionado = true;
         }
     }
@@ -45,15 +45,14 @@ class BotonJugable {
     }
 
     EncenderBoton(){
-        //console.log("Se prendio el boton ", this.elementoId);
-        this.imgComponente.setAttribute("src", this.spriteBotoEncendido);
+        this.imagenComponente.setAttribute("src", this.spriteBotoEncendido);
     }
 
     ApagarBoton(){
-        this.imgComponente.setAttribute("src", this.spriteBotonApagado);
+        this.imagenComponente.setAttribute("src", this.spriteBotonApagado);
     }
 
     CambiarImagen(imagen){
-        this.imgComponente.setAttribute("src", imagen);
+        this.imagenComponente.setAttribute("src", imagen);
     }
 }
