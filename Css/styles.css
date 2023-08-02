@@ -1,4 +1,6 @@
-
+html{
+    height: 100%;
+}
 
 body{
     display: flex;
@@ -9,11 +11,11 @@ body{
 }
 
 header {
-        display: flex;
-        justify-content:space-around;
-        flex-shrink: 0;
-        flex-basis: 100px;
-        align-items: center;    
+    display: flex;
+    justify-content:space-around;
+    flex-shrink: 0;
+    flex-basis: 100px;
+    align-items: center;    
 }
 
 footer {
@@ -32,9 +34,8 @@ footer {
     cursor: pointer;
     top: 50%;
     left: 50%;
-    position: relative;
-    margin-bottom: -50%;
-    transform: translateX(-50%) translateY(-50%);
+    position:absolute;
+    transform: translateX(-50%) translateY(-25%);
     z-index: 1;
 }
 
@@ -63,8 +64,8 @@ footer {
 }
 #botonReset{
 
-    width: 144px;
-    height:65px;
+    width: 139px;
+    height:60px;
     border: none;
     cursor: pointer;
     margin-right: 15px;
@@ -73,8 +74,8 @@ footer {
 
 #botonContacto{
 
-    width: 144px;
-    height:65px;
+    width: 139px;
+    height:60px;
     border: none;
     cursor: pointer;
     margin-left: 15px;    
@@ -90,9 +91,6 @@ button img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height:100%;
-    z-index: 0;
-    
 }
 .ladoDeBotonens {
     
@@ -139,7 +137,7 @@ button {
     margin-right: 5px;
 }
 
-#valorPuntuacionFInal{
+#valorPuntuacionFinal{
     font-size: 30px;
     font-weight: bold;
 }

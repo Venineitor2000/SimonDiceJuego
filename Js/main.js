@@ -5,3 +5,8 @@ var boton3 = new BotonJugable("botonJuego3", "imagenApretada3.png", "imagenApaga
 var boton4 = new BotonJugable("botonJuego4", "imagenApretada4.png", "imagenApagada4.png", "imagenEncendida4.png");
 
 botonesJugables.push(boton1, boton2, boton3, boton4);
+/*<button id="botonPlay" onclick = "BotonPlay()" onmousedown = "Boton('botonPlay', 'botonPlayApretado.png', ValidarBotonPlayInteractauble)" onmouseup="Boton('botonPlay', 'botonPlay.png', ValidarBotonPlayInteractauble)" onmouseleave="Boton('botonPlay', 'botonPlay.png', ValidarBotonPlayInteractauble)"
+                >
+                    <img src="Sprites/botonPlay.png" alt="Boton play">
+            </button>
+            */
