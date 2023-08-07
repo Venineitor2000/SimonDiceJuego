@@ -18,3 +18,4 @@ var nivel = 1;
 var multiplicadorPuntaje = 100; 
 //De momento no le doy ningun uso al nombre, solo lo almaceno
 var nombrePlayer = "Pepe"; 
+var botonesJugables = [];
