@@ -1,3 +1,4 @@
+"use strict";
 //BOTONES
 function AgregarBotonAlAzarASecuencia() {
     var numeroRandom = Math.floor(Math.random() *4);
@@ -132,7 +133,7 @@ function AniadirRespuestaPlayer(BotonPresionado){
     }
         
     //GANASTE, por que ninguna validacion fallo
-    if(secuencia.length == secuenciaRespuestas.length){
+    if(secuencia.length === secuenciaRespuestas.length){
         GanarNivel();  
     }
 

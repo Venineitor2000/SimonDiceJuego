@@ -25,7 +25,10 @@ footer {
     justify-content: center;
 }
 
-
+button {
+    border: none;
+    background-color: transparent;
+}
 
 #botonPlay{
     width: 100px;
@@ -44,7 +47,7 @@ footer {
     border-width: 10px;
     border-radius: 15px;
     border-style: solid;
-    background-color: #FFFFFF; /* Fondo del elemento */
+    background-color: #FFFFFF; 
     border-color: #00b7ff;
 }
 
@@ -53,7 +56,7 @@ footer {
     border-width: 10px;
     border-radius: 15px;
     border-style: solid;
-    background-color:#FFFFFF; /* Fondo del elemento */
+    background-color:#FFFFFF; 
     border-color: #0400ff;
   
 }
@@ -62,6 +65,7 @@ footer {
     display: flex;
     justify-content: center;
 }
+
 #botonReset{
 
     width: 139px;
@@ -73,7 +77,6 @@ footer {
 }
 
 #botonContacto{
-
     width: 139px;
     height:60px;
     border: none;
@@ -86,37 +89,30 @@ button img{
     height: 100%;
 }
 
-
 #botonesJuego {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .ladoDeBotonens {
-    
     display: flex;
     justify-content: center;
 }
 
 #botonesJuego button{
-    
     background-color: transparent;
     border: none;
     width:200px;
     height:200px;
 }
 
-button {
-    border: none;
-    background-color: transparent;
-}
-
 
 #puntuacionFinalContenedor{
+    display: flex;
     height: 100%;
     width: 100%;
     flex-direction: column;
-    display: flex;
     justify-content: center;
     align-items: center;
 }

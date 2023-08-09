@@ -12,14 +12,46 @@ body{
     background-image: linear-gradient(to bottom, #ff00d4, #00b7ff);;
 }
 
+h1{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+div{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    font-size: 20px;
+    width: 130px;
+    height: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+input{
+    margin-bottom: 15px;
+}
+
 label{
 margin-bottom: 5px;
 }
 
-input{
-margin-bottom: 15px;
+a{
+    margin-top: 15px;
+    color: #000000;
 }
 
+label,input{
+    display: block;
+    width: 300px;
+}
+
+label, a{
+    font-size: 20px;
+    font-weight: bold;
+}
 
 .entradaValida{
 background-color: #008000;
@@ -29,38 +61,7 @@ background-color: #008000;
 background-color: #FF0000;
 }
 
-label,input{
-    display: block;
-    width: 300px;
-}
 
 
-h1{
-    font-size: 30px;
-    
-    text-decoration: underline;
-    margin-bottom: 5px;
-}
 
-label, a{
-    font-size: 20px;
-    font-weight: bold;
-}
 
-button{
-    font-size: 20px;
-    width: 130px;
-    height: 25px;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-div{
-    display: flex;
-    justify-content: space-around;
-}
-
-a{
-    margin-top: 15px;
-    color: #000000;
-}

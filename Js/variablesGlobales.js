@@ -1,3 +1,4 @@
+"use strict";
 //VARIABLES GLOBALES
 var terminoJuego = false;
 var terminoSecuencia = true;

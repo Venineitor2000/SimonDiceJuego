@@ -1,3 +1,4 @@
+"use strict";
 document.addEventListener("DOMContentLoaded", function(){
     var boton1 = new BotonJugable("botonJuego1", "imagenApretada1.png", "imagenApagada1.png", "imagenEncendida1.png");
     var boton2 = new BotonJugable("botonJuego2", "imagenApretada2.png", "imagenApagada2.png", "imagenEncendida2.png");

@@ -1,3 +1,4 @@
+"use strict";
 //VARIABLES
 var nombreInput = document.querySelector("input[id = 'nombre']");
 var mensajeInput = document.querySelector("input[id = 'mensaje']");
