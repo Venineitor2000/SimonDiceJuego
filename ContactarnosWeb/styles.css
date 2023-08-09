@@ -35,7 +35,7 @@ input{
 }
 
 label{
-margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 a{
@@ -54,11 +54,11 @@ label, a{
 }
 
 .entradaValida{
-background-color: #008000;
+    background-color: #008000;
 }
 
 .entradaInvalida{
-background-color: #FF0000;
+    background-color: #FF0000;
 }
 
 

@@ -58,7 +58,6 @@ button {
     border-style: solid;
     background-color:#FFFFFF; 
     border-color: #0400ff;
-  
 }
 
 .valorPuntosContador{
@@ -67,7 +66,6 @@ button {
 }
 
 #botonReset{
-
     width: 139px;
     height:60px;
     border: none;
@@ -152,7 +150,6 @@ button img{
     transform: translateX(-50%) translateY(-25%);
     border-radius: 15px;
     background-color: #FF0000;
-
 }
 
 #ingresarNombreContenedor button img{
