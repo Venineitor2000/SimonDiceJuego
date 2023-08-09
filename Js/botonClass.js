@@ -36,11 +36,11 @@ class BotonJugable {
     SoltarBoton(){
         if (terminoSecuencia && !terminoRespuestas && !terminoJuego) {
             this.ApagarBoton();
-        }
 
-        if (this.botonSeleccionado && terminoSecuencia && !terminoRespuestas && !terminoJuego) {
-            //ejecutar lo que pasa si soltaste el boton intencionalmente, osea si lo apretaste bien
-            AniadirRespuestaPlayer(this);
+            if (this.botonSeleccionado) {
+                //ejecutar lo que pasa si soltaste el boton intencionalmente, osea si lo apretaste bien
+                AniadirRespuestaPlayer(this);
+            }
         }
     }
 
@@ -52,6 +52,7 @@ class BotonJugable {
         this.imagenComponente.setAttribute("src", this.spriteBotonApagado);
     }
 
+    //Esta funcion es para cambiar el sprite actual por el sprite de otro boton diferente
     CambiarImagen(imagen){
         this.imagenComponente.setAttribute("src", imagen);
     }

@@ -27,7 +27,7 @@ footer {
 
 
 
-#botonPlay {
+#botonPlay{
     width: 100px;
     height:100px;
     border: none;
@@ -44,7 +44,7 @@ footer {
     border-width: 10px;
     border-radius: 15px;
     border-style: solid;
-    background-color: rgb(255, 255, 255); /* Fondo del elemento */
+    background-color: #FFFFFF; /* Fondo del elemento */
     border-color: #00b7ff;
 }
 
@@ -53,7 +53,7 @@ footer {
     border-width: 10px;
     border-radius: 15px;
     border-style: solid;
-    background-color: rgb(255, 255, 255); /* Fondo del elemento */
+    background-color:#FFFFFF; /* Fondo del elemento */
     border-color: #0400ff;
   
 }
@@ -122,12 +122,12 @@ button {
 }
 
 #perdiste{
-    background-color: red;
+    background-color: #FF0000;
     margin: 15px;
     font-size: 50px;
     font-weight: bold;
     border-radius: 15px;
-    color: white;
+    color: #FFFFFF;
 }
 
 #puntuacionFInal{
@@ -142,7 +142,7 @@ button {
     font-weight: bold;
 }
     
-div#ingresarNombreContenedor{
+#ingresarNombreContenedor{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,11 +155,11 @@ div#ingresarNombreContenedor{
     width: 500px;
     transform: translateX(-50%) translateY(-25%);
     border-radius: 15px;
-    background-color: red;
+    background-color: #FF0000;
 
 }
 
-div#ingresarNombreContenedor button img{
+#ingresarNombreContenedor button img{
     margin-top: 15px;
     margin-bottom: 15px;
     width: 108px;
@@ -169,7 +169,7 @@ div#ingresarNombreContenedor button img{
     margin-left: 15px;  
 }
 
-div#ingresarNombreContenedor label, div#ingresarNombreContenedor p{
+#ingresarNombreContenedor label, #ingresarNombreContenedor p{
     font-size: 15px;
     font-weight: bold;
 }

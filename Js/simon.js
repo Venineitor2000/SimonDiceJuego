@@ -101,10 +101,10 @@ function CambiarAPantallaPerder(){
 function Perder(BotonPresionado){
     terminoJuego = true;
     botonesJugables.forEach(function (boton) {
-        boton.CambiarImagen(BotonPresionado.spriteBotoEncendido);
-        setTimeout(CambiarAPantallaPerder
-        , 1500);
-    })
+        //Cambio las imagenes de todos los botones por la del boton que presionaste mal, para mas feedback
+        boton.CambiarImagen(BotonPresionado.spriteBotoEncendido);     
+    });
+    setTimeout(CambiarAPantallaPerder, 1500);
 }
 
 function GanarNivel(){
