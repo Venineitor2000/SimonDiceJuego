@@ -41,10 +41,10 @@ function Detenerupdate() {
 }
 
 //La implementacion del update
-function IniciarUpdate(intervalo) {
+function IniciarUpdate(duracionIntervalo) {
     if(updateActual !== null)
     clearInterval(updateActual);
-    updateActual = setInterval( UpdateContent, intervalo);
+    updateActual = setInterval( UpdateContent, duracionIntervalo);
 }
 
 //FUNCIONES FUNDAMENTALES
@@ -109,11 +109,10 @@ function Perder(BotonPresionado){
 }
 
 function GanarNivel(){
-    if(updateActual !== null)
-        clearInterval(updateTiempo);
-        terminoRespuestas = true;    
-        ActualizarNivel();
-        IniciarJuego();
+    clearInterval(updateTiempo);
+    terminoRespuestas = true;    
+    ActualizarNivel();
+    IniciarJuego();
 }
 
 function AniadirRespuestaPlayer(BotonPresionado){
@@ -126,7 +125,6 @@ function AniadirRespuestaPlayer(BotonPresionado){
     
     //PERDISTE, el BotonPresionado no era el correcto
     else{
-        if(updateActual !== null)
         clearInterval(updateTiempo);
         Perder(BotonPresionado);       
         return;

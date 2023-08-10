@@ -9,7 +9,9 @@ var posSecuenciaActual = 0;
 var duracionBotonEncendido = 750;
 //Cuanto pasa desde q se prende uno, hasta que se prende el otro, la diferencia entre las 2 es lo q va a pasar apagado, tiene q ser mayor q el tiempo encendido
 var duracionIntervaloEncendido = 1000;
+//Instancia del intervalo que ejecuta la secuencia
 var updateActual = null;
+//Instancia del intervalo que ejecuta el temporizador
 var updateTiempo;
 var secuenciaRespuestas = [];
 var puntaje = 0;
